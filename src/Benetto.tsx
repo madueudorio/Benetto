@@ -62,17 +62,17 @@ const dados: Menu[] = [
     },
 
     {
-        id: "11", nome: "Sorvete Acompanhado de Brownie", preco: "Valor: R$54,00", ingredientes: "Ingredientes: Sorvete da sau Escolha com Brownie de Chocolate com gotas de Chocolate",
+        id: "11", nome: "Sorvete Acompanhado de Brownie", preco: "Valor: R$332,00", ingredientes: "Ingredientes: Sorvete da sau Escolha com Brownie de Chocolate com gotas de Chocolate",
         imagens: require('./assets/images/sorvetebrownie.png')
     },
 
     {
-        id: "12", nome: "Torta de Amoras", preco: "Valor: R$71,00", ingredientes: "Ingredientes: Creme Branco, Massa de torta, Calda de Amoras, Amora",
+        id: "12", nome: "Torta de Amoras", preco: "Valor: R$25,00", ingredientes: "Ingredientes: Creme Branco, Massa de torta, Calda de Amoras, Amora",
         imagens: require('./assets/images/tortaamora.png')
     },
 
     {
-        id: "13", nome: "Torta de Frutas Vermelhas", preco: "Valor: R$71,00", ingredientes: "Ingredientes: Creme Branco, Massa de torta, Calda de Frutas Vermelhas, Morango, Framboesa, Amora e Blueberry",
+        id: "13", nome: "Torta de Frutas Vermelhas", preco: "Valor: R$25,00", ingredientes: "Ingredientes: Creme Branco, Massa de torta, Calda de Frutas Vermelhas, Morango, Framboesa, Amora e Blueberry",
         imagens: require('./assets/images/tortafrutasvermelhas.png')
     },
 
@@ -92,44 +92,44 @@ const dados: Menu[] = [
     },
 
     {
-        id: "16", nome: "Gin De Frutas Vermelhas", preco: "Valor: R$36,00", ingredientes: "Ingredientes: Gin, Frutas Vermelhas, Açúcar, Hortelã e Calda de Sua Escolha",
+        id: "17", nome: "Gin De Frutas Vermelhas", preco: "Valor: R$36,00", ingredientes: "Ingredientes: Gin, Frutas Vermelhas, Açúcar, Hortelã e Calda de Sua Escolha",
         imagens: require('./assets/images/ginfrutasvermelhas.png')
     },
 
     {
-        id: "17", nome: "Vodka com Água com Gás", preco: "Valor: R$75,00", ingredientes: "Vodka, Água com Gás, Açúcar e Gelo",
+        id: "18", nome: "Vodka com Água com Gás", preco: "Valor: R$75,00", ingredientes: "Vodka, Água com Gás, Açúcar e Gelo",
         imagens: require('./assets/images/vodka.png')
     },
 
     {
-        id: "18", nome: "Xevete de Morango", preco: "Valor: R$65,00", ingredientes: "Energético, Vodka, Açúcar e Gelo",
+        id: "19", nome: "Xevete de Morango", preco: "Valor: R$65,00", ingredientes: "Energético, Vodka, Açúcar e Gelo",
         imagens: require('./assets/images/xevete.png')
     },
 
     {
-        id: "19", nome: "Cerveja 1L", preco: "Valor: R$25,00", ingredientes: "Tipos: Heineken, Skol, Brahma, Amstel, Corona, Itaipava, Cristal e Baudweiser",
+        id: "20", nome: "Cerveja 1L", preco: "Valor: R$25,00", ingredientes: "Tipos: Heineken, Skol, Brahma, Amstel, Corona, Itaipava, Cristal e Baudweiser",
         imagens: require('./assets/images/cerveja.png')
     },
 
     {
-        id: "20", nome: "Coquetel de Framboesa", preco: "Valor: R$37,00", ingredientes: "Ingredientes: Suco de Framboesa, Vodka, Açúcar, Gelo e Alecrim",
+        id: "21", nome: "Coquetel de Framboesa", preco: "Valor: R$37,00", ingredientes: "Ingredientes: Suco de Framboesa, Vodka, Açúcar, Gelo e Alecrim",
         imagens: require('./assets/images/coqueteldemorango.png')
     },
 
     {
-        id: "21", nome: "Refrigerante 1L e 2L", preco: "Valor: R$10,00", ingredientes: "Tipos: Coca, Fanta, Guaraná, Sprite, Fanta Uva",
+        id: "22", nome: "Refrigerante 1L e 2L", preco: "Valor: R$10,00", ingredientes: "Tipos: Coca, Fanta, Guaraná, Sprite, Fanta Uva",
         imagens: require('./assets/images/refri.png')
     },
 
 
     {
-        id: "22", nome: "Vinho", preco: "Valor: R$47,00", ingredientes: "Tipos: Vinho doce e Seco",
+        id: "23", nome: "Vinho", preco: "Valor: R$47,00", ingredientes: "Tipos: Vinho doce e Seco",
         imagens: require('./assets/images/vinho.png')
     },
 
 
     {
-        id: "23", nome: "Suco de Maracujá", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Maracujá, Açúcar, e Gelo",
+        id: "24", nome: "Suco de Maracujá", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Maracujá, Açúcar, e Gelo",
         imagens: require('./assets/images/sucomaracuja.png')
     },
 
@@ -141,51 +141,45 @@ const dados: Menu[] = [
 
 
     {
-        id: "25", nome: "Suco de Abacaxi com Hortelã", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Abacaxi,Hortelã, Açúcar, e Gelo",
+        id: "26", nome: "Suco de Abacaxi com Hortelã", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Abacaxi,Hortelã, Açúcar, e Gelo",
         imagens: require('./assets/images/abacaxiehortela.png')
     },
 
 
     {
-        id: "26", nome: "Ice", preco: "Valor: R$7,00", ingredientes: "Tipos: Maracujá, Limão e Frutas Vermelhas",
+        id: "27", nome: "Ice", preco: "Valor: R$7,00", ingredientes: "Tipos: Maracujá, Limão e Frutas Vermelhas",
         imagens: require('./assets/images/ice.png')
     },
     
     
     {
-        id: "27", nome: "Suco de Morango", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Morango, Açúcar, e Gelo",
+        id: "28", nome: "Suco de Morango", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Morango, Açúcar, e Gelo",
         imagens: require('./assets/images/sucomorango.png')
     },
 
 
     
     {
-        id: "28", nome: "Suco De Laranja", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Laranja, Açúcar, e Gelo",
+        id: "29", nome: "Suco De Laranja", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Laranja, Açúcar, e Gelo",
         imagens: require('./assets/images/sucodelaranja.png')
     },
 
     {
-        id: "29", nome: "Caipirinha", preco: "Valor: R$20,00", ingredientes: "Ingredientes: Limão, Vodka, Açúcar e Gelo",
+        id: "30", nome: "Caipirinha", preco: "Valor: R$20,00", ingredientes: "Ingredientes: Limão, Vodka, Açúcar e Gelo",
         imagens: require('./assets/images/caipirinha.png')
     },
 
 
     {
-        id: "30", nome: "Suco De Limão", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Limão, Açúcar, e Gelo",
+        id: "31", nome: "Suco De Limão", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Limão, Açúcar, e Gelo",
         imagens: require('./assets/images/sucodelimao.png')
     },
 
 
     {
-        id: "31", nome: "H2O", preco: "Valor: R$15,00", ingredientes: "Tipo: 600ml e 1L",
+        id: "32", nome: "H2O", preco: "Valor: R$15,00", ingredientes: "Tipo: 600ml e 1L",
         imagens: require('./assets/images/h2O.png')
-    },
-
-
-    
-
-
-];
+    },]
 
 
 
