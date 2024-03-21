@@ -12,7 +12,7 @@ interface Menu {
 
 const dados: Menu[] = [
     {
-        id: "", nome: "Porção de Arroz Carreteiro", preco: "Valor: R$65,00", ingredientes: "Ingredientes: Carnes de churrasco picadas em cubos, Arroz, Cebola ,Dentes de alho, Tomate, Ramos de salsinha e Cebolinha"
+        id: "1", nome: "Porção de Arroz Carreteiro", preco: "Valor: R$65,00", ingredientes: "Ingredientes: Carnes de churrasco picadas em cubos, Arroz, Cebola ,Dentes de alho, Tomate, Ramos de salsinha e Cebolinha"
         , imagens: require('./assets/images/arrozcarreteiro.png')
     },
 
@@ -62,7 +62,7 @@ const dados: Menu[] = [
     },
 
     {
-        id: "11", nome: "Sorvete Acompanhado de Brownie", preco: "Valor: R$332,00", ingredientes: "Ingredientes: Sorvete da sau Escolha com Brownie de Chocolate com gotas de Chocolate",
+        id: "11", nome: "Sorvete Acompanhado de Brownie", preco: "Valor: R$32,00", ingredientes: "Ingredientes: Sorvete da sau Escolha com Brownie de Chocolate com gotas de Chocolate",
         imagens: require('./assets/images/sorvetebrownie.png')
     },
 
@@ -135,7 +135,7 @@ const dados: Menu[] = [
 
 
     {
-        id: "24", nome: "Champanhe", preco: "Valor: R$52,00", ingredientes: "Tipos: Espumante Doce e Seco",
+        id: "25", nome: "Champanhe", preco: "Valor: R$52,00", ingredientes: "Tipos: Espumante Doce e Seco",
         imagens: require('./assets/images/champanhe.png')
     },
 
