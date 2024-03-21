@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Image, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, ImageBackground, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 interface Menu {
     id: string;
@@ -198,10 +198,12 @@ function Benetto(): React.JSX.Element {
     return (
 
         <View style={styles.container}>
+              <ImageBackground source={require('./assets/images/restaurante.png')} resizeMode="cover" style={styles.imagebackground}>
             <StatusBar backgroundColor="#720a94" barStyle='light-content' />
+          
             <View style={styles.header}>
 
-                <Image style={styles.logo} source={require('./assets/images/benetto.logo..png')} />
+                <Image style={styles.logo} source={require('./assets/images/logocerta.png')} />
             </View>
 
 
@@ -222,7 +224,9 @@ function Benetto(): React.JSX.Element {
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
             />
+            </ImageBackground>
             <View style={styles.footer}>
+                
                 <TouchableOpacity>
                     <Image source={require('./assets/images/home.png')}
                         style={styles.footerIcon} />
@@ -257,20 +261,22 @@ const styles = StyleSheet.create({
 
 
     },
+    imagebackground: {
+        flex:1,
+        justifyContent: 'center',
+        resizeMode: 'cover',
+        alignItems: 'center'
+       },
     item: {
         backgroundColor: '#720a94',
         padding: 15,
-        marginVertical: 10,
-        marginHorizontal: 10,
+        marginVertical: 30,
+        marginHorizontal: 30,
         borderTopLeftRadius: 20,
         fontSize: 30
+
     },
-    header: {
-        backgroundColor: 'black',
-        alignItems: 'center',
-        paddingVertical: 5,
-
-
+    header:{
 
     },
     headerText: {
@@ -295,8 +301,9 @@ const styles = StyleSheet.create({
         height: 35
     },
     logo: {
-        width: 200,
-        height: 200,
+        width: 275,
+        height: 275,
+    
 
     },
     corTexto: {
