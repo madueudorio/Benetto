@@ -60,7 +60,6 @@ const dados: Menu[] = [
         id: "10", nome: "Yakisoba", preco: "Valor: R$96,00", ingredientes: "Ingredientes: Macarrão Espaguete, Cenoura, Brócolis, Couve Flor e Carne",
         imagens: require('./assets/images/yakisoba.png')
     },
-
     {
         id: "11", nome: "Sorvete Acompanhado de Brownie", preco: "Valor: R$32,00", ingredientes: "Ingredientes: Sorvete da sau Escolha com Brownie de Chocolate com gotas de Chocolate",
         imagens: require('./assets/images/sorvetebrownie.png')
@@ -85,8 +84,7 @@ const dados: Menu[] = [
         id: "15", nome: "Petit Gateau", preco: "Valor: R$65,00", ingredientes: "Ingredientes: Bolo de chocolate com Recheio e Sorvete de sua Preferência",
         imagens: require('./assets/images/petitgatto.png')
     },
-
-    {
+ {
         id: "16", nome: "Gin De Morango", preco: "Valor: R$36,00", ingredientes: "Ingredientes: Gin, Morangos, Açúcar, Hortelã e Calda de Sua Escolha",
         imagens: require('./assets/images/ginfrutas.png')
     },
@@ -157,7 +155,6 @@ const dados: Menu[] = [
         imagens: require('./assets/images/sucomorango.png')
     },
 
-
     
     {
         id: "29", nome: "Suco De Laranja", preco: "Valor: R$12,00", ingredientes: "Ingredientes: Suco Natural de Laranja, Açúcar, e Gelo",
@@ -179,7 +176,9 @@ const dados: Menu[] = [
     {
         id: "32", nome: "H2O", preco: "Valor: R$15,00", ingredientes: "Tipo: 600ml e 1L",
         imagens: require('./assets/images/h2O.png')
-    },]
+    },
+]
+
 
 
 
@@ -216,8 +215,7 @@ function Benetto(): React.JSX.Element {
                 placeholderTextColor={"black"}
             />
             </View>
-
-
+      
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={dados}
@@ -270,7 +268,7 @@ const styles = StyleSheet.create({
     item: {
         backgroundColor: '#720a94',
         padding: 15,
-        marginVertical: 30,
+        marginVertical: 5,
         marginHorizontal: 30,
         borderTopLeftRadius: 20,
         fontSize: 30
@@ -287,14 +285,15 @@ const styles = StyleSheet.create({
 
 
     },
+
     footer: {
         borderTopWidth: 0.2,
         backgroundColor: 'white',
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        paddingVertical: 20,
-        borderTopLeftRadius: 20
+        paddingVertical: 15,
+        borderTopLeftRadius: 15
     },
     footerIcon: {
         width: 35,
@@ -315,8 +314,8 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     imagem: {
-        width: 225,
-        height: 225,
+        width: 200,
+        height: 200,
         left: 50,
         marginTop: 10,
         borderTopLeftRadius: 30,
@@ -346,7 +345,8 @@ const styles = StyleSheet.create({
         height: 35,
         right: 30,
         
-    }
+    },
+  
 })
 
 export default Benetto
