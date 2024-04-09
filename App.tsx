@@ -11,8 +11,8 @@ function App(): React.JSX.Element {
   return (
 //<LoginScreen/>
 //<Carrinho/>
-//<CadastroCliente/>
- <CadastroProduto/>
+<CadastroCliente/>
+ //<CadastroProduto/>
   //<Benetto/>
    
   );
