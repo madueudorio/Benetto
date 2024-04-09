@@ -47,7 +47,7 @@ const CadastroProduto: React.FC = () => {
             } else if (response.error) {
                 console.log('erro ao abrir a camera');
             } else {
-                let imageUri = response.url || response.assets?.[0]?.uri;
+                let imageUri = response.uri || response.assets?.[0]?.uri;
                 setImagem(imageUri);
                 console.log(imageUri);
             }
@@ -68,7 +68,7 @@ const CadastroProduto: React.FC = () => {
             if (response.didCancel) {
                 console.log('cancelado pelo usuario');
             } else if (response.error) {
-                console.log('errp ao abrir a galeria');
+                console.log('erro ao abrir a galeria');
             } else {
                 let imageUri = response.uri || response.assets?.[0]?.uri;
                 setImagem(imageUri);
@@ -78,9 +78,9 @@ const CadastroProduto: React.FC = () => {
 
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor="red" barStyle="light-content" />
+            <StatusBar backgroundColor="black" barStyle="light-content" />
             <View style={styles.header}>
-                <Text style={styles.header}>Top Food</Text>
+                <Text style={styles.headerText}>Cadastro Produto</Text>
             </View>
             <View style={styles.form}>
                 <TextInput
@@ -128,30 +128,30 @@ const styles = StyleSheet.create({
         flex: 1
     },
     header: {
-        backgroundColor: 'red',
+        backgroundColor: '#720a94',
         paddingVertical: 10,
         alignItems: 'center',
     },
     headerText: {
         fontSize: 20,
-        fontWeight: 'bold',
-        color: 'white',
+        color: 'black',
     },
     form: {
         padding: 10,
         backgroundColor: '#f0f0f0',
         marginBottom: 10,
     },
+    
     input: {
         height: 40,
-        borderColor: 'gray',
+        borderColor: 'black',
         borderWidth: 1,
         marginBottom: 10,
         paddingHorizontal: 10,
         borderRadius: 10
     },
     imageButton: {
-        backgroundColor: 'red',
+        backgroundColor: '#720a94',
         padding: 10,
         borderRadius: 5,
         alignItems: 'center',
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button: {
-        backgroundColor: 'red',
+        backgroundColor: '#720a94',
         padding: 10,
         borderRadius: 5,
         alignItems: 'center'

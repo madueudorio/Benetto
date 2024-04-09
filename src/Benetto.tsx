@@ -188,6 +188,7 @@ const renderItem = ({ item }: { item: Menu }) => (
         <Text style={[styles.corTexto, styles.escrita]}>{item.preco}</Text>
         <Text style={styles.corTexto}>{item.ingredientes}</Text>
         <Image style={styles.imagem} source={item.imagens} />
+        <TouchableOpacity><Image source={require('./assets/images/adicionar.png')} style={styles.adicionar}></Image></TouchableOpacity>
 
     </TouchableOpacity>
 );
@@ -346,7 +347,13 @@ const styles = StyleSheet.create({
         right: 30,
         
     },
+    adicionar: {
+        width: 40,
+        height: 40,
+        marginStart: 138.5,
+        marginTop: 10
+    },
   
-})
+});
 
 export default Benetto

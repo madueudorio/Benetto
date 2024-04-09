@@ -12,12 +12,12 @@ function Carrinho(): React.JSX.Element {
             <View style={styles.header}>
                 
                 <Image 
-                source={require('./assets/images/logo.jpeg')}
-                style={styles.logo}/>
+                source={require('./assets/images/cart.jpeg')}
+                style={styles.cart}/>
             </View>
                 
             <View style={styles.body}>
-                <Text style={styles.carrinhoVazio}>Seu carrinho está vazio</Text>
+                <Text style={styles.cart}>Seu carrinho está vazio</Text>
             </View>
             <View>
                 <TouchableOpacity style={styles.button}>
@@ -28,29 +28,25 @@ function Carrinho(): React.JSX.Element {
             <View style={styles.footer}>
                 <TouchableOpacity>
                     <Image 
-                    source={require('./assets/images/home.png')}
+                    source={require('./assets/images/house.png')}
                     style={styles.footerIcon}/>
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image 
-                    source={require('./assets/images/orders.png')}
+                    source={require('./assets/images/order.png')}
                     style={styles.footerIcon}/>
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image 
-                    source={require('./assets/images/profile.png')}
+                    source={require('./assets/images/profileeu.png')}
                     style={styles.footerIcon}/>
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image 
-                    source={require('./assets/images/menu.png')}
+                    source={require('./assets/images/risco.png')}
                     style={styles.footerIcon}/>
                 </TouchableOpacity>
-                <TouchableOpacity>
-                    <Image 
-                    source={require('./assets/images/sacola.png')}
-                    style={styles.footerIcon}/>
-                </TouchableOpacity>
+                
                 </View>
              
             </View>
@@ -81,7 +77,8 @@ const styles = StyleSheet.create({
     header: {
         opacity:1,
         alignItems: 'center',
-        paddingVertical: 10
+        paddingVertical: 10,
+        
     },
     footer: {
         borderTopWidth: 0.2,
@@ -154,13 +151,14 @@ const styles = StyleSheet.create({
       borderColor: 'white',
       marginLeft: 'auto'
     },
-    carrinhoVazio: {
+    cart: {
         color: 'white',
         fontSize: 30,
         fontWeight: 'bold',
         alignSelf:'center',
         alignContent:'center',
-        alignItems:'center',       
+        alignItems:'center',     
+        marginTop: -400  
             
     },
     button:{
