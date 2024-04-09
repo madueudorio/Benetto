@@ -7,6 +7,9 @@ import CadastroProduto from './src/screens/CadastroProduto';
 
 function App(): React.JSX.Element {
   return (
+/*<LoginScreen/>*/   
+/*<Carrinho/>*/
+/*<CadastroBenetto/>*/ 
     <CadastroProduto />
   );
 }
