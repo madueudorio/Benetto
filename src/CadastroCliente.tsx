@@ -5,12 +5,12 @@ import { launchCamera, launchImageLibrary } from "react-native-image-picker";
 
 function CadastroCliente(): JSX.Element {
 
-    const [nome, setNome] = useState("");
-    const [endereco, setEndereco] = useState("");
-    const [telefone, setTelefone] = useState("");
-    const [email, setEmail] = useState("");
-    const [cpf, setCpf] = useState("");
-    const [password, setPassword] = useState("");
+    const [nome, setNome] = useState<string>("");
+    const [endereco, setEndereco] = useState<string>("");
+    const [telefone, setTelefone] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [cpf, setCpf] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
     const [image, setImage] = useState<any>("");
 
     const cadastrarClientes = async () => {
