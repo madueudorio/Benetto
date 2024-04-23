@@ -1,5 +1,7 @@
 import React from 'react';
 import { FlatList, Image, ImageBackground, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 interface Menu {
     id: string;
@@ -195,6 +197,7 @@ const renderItem = ({ item }: { item: Menu }) => (
 
 
 function Benetto(): React.JSX.Element {
+    const navigation = useNavigation();
     return (
 
         <View style={styles.container}>
@@ -231,12 +234,12 @@ function Benetto(): React.JSX.Element {
                         style={styles.footerIcon} />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Benetto')}>
                     <Image source={require('./assets/images/menuuu.png')}
                         style={styles.footerIcon} />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('CadastroProduto')}>
                     <Image source={require('./assets/images/pedido.png')}
                         style={styles.footerIcon} />
                 </TouchableOpacity>
